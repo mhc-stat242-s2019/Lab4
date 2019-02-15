@@ -1,0 +1,56 @@
+---
+title: "Lab04 - F tests for ANOVA"
+output: pdf_document
+---
+
+## Goals
+
+The goal in this lab is to practice F tests for ANOVA
+
+## Loading packages
+
+Here are some packages with functionality you may need for this lab.  Run this code chunk now.
+
+```{r}
+library(readr)
+library(ggplot2)
+library(gridExtra)
+library(mosaic)
+library(dplyr)
+
+options("pillar.sigfig" = 10) # print 10 significant digits in summarize output
+```
+
+A study was conducted to examine the effectiveness of four different hand-washing methods for eliminating bacteria
+
+```{r}
+soap <- read_csv("http://www.evanlray.com/data/sdm4/Bacterial_Soap.csv")
+names(soap) <- c("bacterial_counts", "method")
+
+soap %>%
+  count(method)
+```
+
+#### 1. Make an appropriate plot of the data.
+
+```{r}
+
+```
+
+#### 2. Conduct a test of the claim that all four methods are equally effective.
+
+```{r}
+
+```
+
+#### 3. Conduct a test of the claim that the "Antibacterial Soap", "Soap", and "Water" methods are equally effective.
+
+```{r}
+
+```
+
+#### 4. (Optional) If you have extra time and want a refresher, calculate the mean and standard deviation of observations in each group
+
+```{r}
+
+```
